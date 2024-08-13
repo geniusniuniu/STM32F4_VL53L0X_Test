@@ -83,7 +83,6 @@ VL53L0X_Error vl53l0x_set_mode(VL53L0X_Dev_t *dev,u8 mode)
 	 if(status!=VL53L0X_ERROR_NONE)
 	 {
 		print_pal_error(status);
-		LCD_Fill(30,140+20,300,300,WHITE);
 		return status;
 	 }
 	 return status;
@@ -99,7 +98,8 @@ VL53L0X_Error vl53l0x_start_single_test(VL53L0X_Dev_t *dev,VL53L0X_RangingMeasur
 	uint8_t RangeStatus;
 	
 	status = VL53L0X_PerformSingleRangingMeasurement(dev, pdata);//执行单次测距并获取测距测量数据
-	if(status !=VL53L0X_ERROR_NONE) return status;
+	if(status !=VL53L0X_ERROR_NONE) 
+		return status;
    
 	RangeStatus = pdata->RangeStatus;//获取当前测量状态
     memset(buf,0x00,VL53L0X_MAX_STRING_LENGTH);
@@ -125,20 +125,12 @@ void vl53l0x_general_start(VL53L0X_Dev_t *dev,u8 mode)
 	mode_string(mode,buf);//显示当前配置的模式
 	while(vl53l0x_set_mode(dev,mode))//配置测量模式
 	{
-		LCD_ShowString(30,140+40,200,16,16,"Mode Set Error!!!");
-		delay_ms(500);
-		LCD_ShowString(30,140+40,200,16,16,"                 ");
 		delay_ms(500);
 		i++;
 		if(i==2) return;
 	
 	}
-	LCD_Fill(30,140+20,300,300,WHITE);
-	LCD_ShowString(30,140+30,200,16,16,"KEY_UP: Exit the test             ");		
-	LCD_ShowString(30,140+50,200,16,16,"Mode:        ");
-	LCD_ShowString(80,140+50,200,16,16,(u8*)buf);
-	LCD_ShowString(30,140+70,200,16,16,"State:");//显示测量状态	 
-	LCD_ShowString(30,140+90,200,16,16,"Distance:    0 mm");//显示测量距离 
+
 	while(1)
 	{
 		 key = KEY_Scan(0);
@@ -171,13 +163,6 @@ void vl53l0x_general_start(VL53L0X_Dev_t *dev,u8 mode)
 //vl53l0x普通测量模式UI
 void general_ui(void)
 {
-	LCD_Fill(30,140+20,300,300,WHITE);
-	POINT_COLOR=RED;        //设置字体为红色 
-	LCD_ShowString(30,140+30,300,16,16,"General Mode                  ");
-	LCD_ShowString(30,140+55,300,16,16,"KEY1: Switch working mode    ");
-	POINT_COLOR=BLUE;       //设置字体为蓝色 
-	LCD_ShowString(30,140+75,300,16,16, "KEY_UP: Return menu    ");
-	LCD_ShowString(30,140+95,300,16,16, "KEY0:   Default        ");
 	printf("general_test \n\r");
 	printf("WK_UP: Return menu \n\r");
 	printf("KEY1 : Switch working mode \n\r");
@@ -194,10 +179,10 @@ void vl53l0x_general_test(VL53L0X_Dev_t *dev)
 	mode=HIGH_ACCURACY;
 	switch(mode)
 	{
-	 case Default_Mode:  LCD_ShowString(95,140+95,300,16,16, "Default        "); printf("Default \n\r"); break;//默认
-	 case HIGH_ACCURACY: LCD_ShowString(95,140+95,300,16,16, "High Accuracy  "); printf("High Accuracy \n\r"); break;//高精度
-	 case LONG_RANGE:    LCD_ShowString(95,140+95,300,16,16, "Long Range     "); printf("Long Range \n\r"); break;//长距离
-	 case HIGH_SPEED:    LCD_ShowString(95,140+95,300,16,16, "High Speed     "); printf("High Speed \n\r"); break;//高速
+	 case Default_Mode:   printf("Default \n\r"); break;//默认
+	 case HIGH_ACCURACY:  printf("High Accuracy \n\r"); break;//高精度
+	 case LONG_RANGE:     printf("Long Range \n\r"); break;//长距离
+	 case HIGH_SPEED:     printf("High Speed \n\r"); break;//高速
 	}
-	One_measurement(mode);
+//	One_measurement(mode);
 }

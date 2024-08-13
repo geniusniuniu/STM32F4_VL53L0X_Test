@@ -1,6 +1,6 @@
 Dependencies for Project 'VL53L0X', Target 'VL53L0X': (DO NOT MODIFY !)
 CompilerVersion: 5060528::V5.06 update 5 (build 528)::ARMCC
-F (.\main.c)(0x66BAD9F1)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x66BAFD48)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\HARDWARE\LED\led.h)(0x66BAD959)
 I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\USER\stm32f4xx.h)(0x618A321A)
@@ -40,7 +40,7 @@ I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x618A321A)
 I (..\SYSTEM\delay\delay.h)(0x618A321A)
 I (..\SYSTEM\usart\usart.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -51,7 +51,7 @@ I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_i2c.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -765,8 +765,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -827,8 +827,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -887,8 +887,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -947,8 +947,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -1006,8 +1006,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -1101,8 +1101,8 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-F (..\HARDWARE\VL53L0X\Demo\vl53l0x.c)(0x66BAD9F1)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x.o --omf_browse ..\obj\vl53l0x.crf --depend ..\obj\vl53l0x.d)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAD7B8)
+F (..\HARDWARE\VL53L0X\Demo\vl53l0x.c)(0x66BAFBBE)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x.o --omf_browse ..\obj\vl53l0x.crf --depend ..\obj\vl53l0x.d)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -1149,7 +1149,7 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
@@ -1161,7 +1161,7 @@ I (..\SYSTEM\delay\delay.h)(0x618A321A)
 I (..\HARDWARE\LED\led.h)(0x66BAD959)
 F (..\HARDWARE\VL53L0X\Demo\vl53l0x_cali.c)(0x62822230)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x_cali.o --omf_browse ..\obj\vl53l0x_cali.crf --depend ..\obj\vl53l0x_cali.d)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_cali.h)(0x618A321A)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAD7B8)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -1208,7 +1208,7 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
 I (..\HARDWARE\IIC\myiic.h)(0x618A321A)
@@ -1217,9 +1217,9 @@ I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (..\HARDWARE\KEY\key.h)(0x618A321A)
 I (..\SYSTEM\delay\delay.h)(0x618A321A)
 I (..\HARDWARE\LED\led.h)(0x66BAD959)
-F (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.c)(0x66BAD127)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x_gen.o --omf_browse ..\obj\vl53l0x_gen.crf --depend ..\obj\vl53l0x_gen.d)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x618A321A)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAD7B8)
+F (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.c)(0x66BAFD2A)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x_gen.o --omf_browse ..\obj\vl53l0x_gen.crf --depend ..\obj\vl53l0x_gen.d)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x66BAF4E5)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -1277,7 +1277,7 @@ I (..\SYSTEM\delay\delay.h)(0x618A321A)
 I (..\HARDWARE\LED\led.h)(0x66BAD959)
 F (..\HARDWARE\VL53L0X\Demo\vl53l0x_it.c)(0x62822230)(-c --cpu Cortex-M4.fp.sp -g -O2 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\IIC -I ..\HARDWARE\24CXX -I ..\FWLIB\inc -I ..\HARDWARE\VL53L0X\core\inc -I ..\HARDWARE\VL53L0X\platform\inc -I ..\HARDWARE\VL53L0X\demo -I ..\USMART-ID:\keil5\keil5_MDK\keil5_MDK_32\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D__UVISION_VERSION="534" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\vl53l0x_it.o --omf_browse ..\obj\vl53l0x_it.crf --depend ..\obj\vl53l0x_it.d)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_it.h)(0x618A321A)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAD7B8)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -1324,7 +1324,7 @@ I (..\SYSTEM\sys\sys.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\Demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\Demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
 I (..\HARDWARE\IIC\myiic.h)(0x618A321A)
@@ -1416,7 +1416,7 @@ I (..\SYSTEM\usart\usart.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\HARDWARE\24CXX\24cxx.h)(0x618A321A)
 I (..\HARDWARE\IIC\myiic.h)(0x618A321A)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAD7B8)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x.h)(0x66BAF8FE)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_api_strings.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\core\inc\vl53l0x_def.h)(0x618A321A)
@@ -1427,7 +1427,7 @@ I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_i2c.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\platform\inc\vl53l0x_platform_log.h)(0x618A321A)
 I (D:\keil5\keil5_MDK\keil5_MDK_32\ARM\ARMCC\include\string.h)(0x588B8344)
-I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x618A321A)
+I (..\HARDWARE\VL53L0X\demo\vl53l0x_gen.h)(0x66BAF4E5)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_cali.h)(0x618A321A)
 I (..\HARDWARE\VL53L0X\demo\vl53l0x_it.h)(0x618A321A)
 I (..\HARDWARE\LCD\lcd.h)(0x61C3E916)

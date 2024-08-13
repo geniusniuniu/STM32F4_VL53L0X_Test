@@ -1,4 +1,5 @@
 #include "vl53l0x.h"
+#include "vl53l0x_gen.h"
 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -198,41 +199,14 @@ VL53L0X_Error vl53l0x_init(VL53L0X_Dev_t *dev)
 	return Status;
 }
 
-//主菜单界面
-void vl53l0x_mtest_ui(void)
-{
-	 printf("VL53L0X test \n\r");
-	 printf("WK_UP: calibration_test \n\r");
-	 printf("KEY1 : general_test \n\r");
-	 printf("KEY0 : interrupt_test \n\r");
-}
 
-//VL53L0X主测试程序
-void vl53l0x_test(void)
-{   
-	 u8 i=0;
-	 while(1)
-	 {
-		//vl53l0x_general_test(&vl53l0x_dev);
-		One_measurement(HIGH_ACCURACY);
-		 
-		i++;
-		if(i==15)
-		{
-			 i=0;
-			 LED1=!LED1;
-		}
-		delay_ms(20); 
-	 }
-}
 
 //获取一次测量距离数据
 //mode模式配置 0:默认;1:高精度;2:长距离;3:高速
-void One_measurement(u8 mode)
+void One_measurement()
 {
-	vl53l0x_set_mode(&vl53l0x_dev,mode);
-	VL53L0X_PerformSingleRangingMeasurement(&vl53l0x_dev,&vl53l0x_data);
-	printf("\r\n d: %4d mm.\r\n",vl53l0x_data.RangeMilliMeter);
+	VL53L0X_PerformSingleRangingMeasurement(&vl53l0x_dev,&vl53l0x_data);	
+	printf("%4d\r\n",vl53l0x_data.RangeMilliMeter);
 		
 }
 

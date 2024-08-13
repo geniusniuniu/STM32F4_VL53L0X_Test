@@ -63,11 +63,10 @@ extern uint8_t AjustOK;
 VL53L0X_Error vl53l0x_init(VL53L0X_Dev_t *dev);//初始化vl53l0x
 void print_pal_error(VL53L0X_Error Status);//错误信息打印
 void mode_string(u8 mode,char *buf);//模式字符串显示
-void vl53l0x_test(void);//vl53l0x测试
 void vl53l0x_reset(VL53L0X_Dev_t *dev);//vl53l0x复位
 
 void vl53l0x_info(void);//获取vl53l0x设备ID信息
-void One_measurement(u8 mode);//获取一次测量距离数据
+void One_measurement(void);//获取一次测量距离数据
 #endif
 
 
